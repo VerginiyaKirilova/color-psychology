@@ -86,9 +86,9 @@ The project is built with:
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/your-username/psychology-of-colors.git
+   git clone https://github.com/verginiyakirilova/psychology-of-colors.git
 
-	2.	Open the project in a browser
+2. Open the project in a browser : https://verginiyakirilova.github.io/color-psychology/
 
 cd psychology-of-colors
 open index.html

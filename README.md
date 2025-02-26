@@ -1,17 +1,17 @@
 README.md for GitHub – Psychology of Colors Website
 
-# 🎨 Psychology of Colors – Website
+# Psychology of Colors – Website
 
-## 📌 Project Description
+## Project Description
 This website explores the significance of colors and their psychological impact in marketing, design, and various industries. 
 It includes dynamic content, tables, an interactive slider, and a fully responsive design.
 
 ---
 
-## 🚀 Technologies Used
+## Technologies Used
 The project is built with:
 - **HTML5** – Page structure
-- ****CSS3** – Styling and layout
+- **CSS3** – Styling and layout
 - **JavaScript** – Dynamic content
 - **Responsive Design** – Optimized for mobile devices
 
@@ -38,41 +38,41 @@ The project is built with:
 
 ---
 
-## 🎨 Main Pages and Features
+## Main Pages and Features
 
-### 🏠 Home (`index.html`)
+###  Home (`index.html`)
 - Introduction to color psychology
 - Main navigation menu
 - Responsive design for mobile screens
 
-### 🎨 Colors (`colors.html`)
+### Colors (`colors.html`)
 - Table of color meanings
 - Interactive hover effects
 - Photos slider
 - Responsive design
 
-### 🔗 Color Combinations (`combinations.html`)
+### Color Combinations (`combinations.html`)
 - List of the best color pairings
 - Photos slider
 - Responsive design
 
-### 🏭 Industries (`industries.html`)
+### Industries (`industries.html`)
 - How different industries use colors
 - Layout structured with **CSS Grid**
 - Responsive design
 
-### 🏆 Best Practices (`best-practices.html`)
+### Best Practices (`best-practices.html`)
 - Tips for choosing the right colors
 - Examples of effective color usage
 - Responsive design
 
-### ✉️ Contact Form (`contact.html`)
+### Contact Form (`contact.html`)
 - **JavaScript validation**
 - Dynamic message submission
 
 ---
 
-## 🎯 Features
+## Features
 
 ✅ **Responsive design** – Works on phones, tablets, and desktops  
 ✅ **Interactive slider** – Auto-changing images  
@@ -82,7 +82,7 @@ The project is built with:
 
 ---
 
-## 🛠️ How to Use the Code?
+## How to Use the Code?
 
 1. **Clone the repository**
    ```sh

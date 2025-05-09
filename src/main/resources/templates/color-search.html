@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bg" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка на цвят</title>
+    <link rel="shortcut icon" type="images/images.avif" href="../static/images/images.avif">
+    <link href="../static/css/newcss.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="Lobster">
+<header>
+    <div class="header row">
+        <div class="col-1">
+            <a href="index.html">
+                <img class="logo" src="../static/images/logo.jpg" alt="logo"/>
+            </a>
+        </div>
+        <div class="col-8">
+            <h1 class="content">Проверка на цвят</h1>
+        </div>
+
+        <div class="col-3 socials">
+            <a href=" https://www.facebook.com/" target="_blank" title="Посетете ни в facebook">
+                <img class="f" src="../static/images/facebook.png" alt=""/></a>
+            <a href=" https://x.com/?lang=en&mx=2" target="_blank" title="Посетете ни в x">
+                <img class="x" src="../static/images/X_logo.JPG" alt=""/></a>
+            <a href=" https://www.instagram.com/" target="_blank" title="Посетете ни в instagram">
+                <img class="inst" src="../static/images/instagram.png" alt=""/></a>
+        </div>
+        <div class="imgcontainer">
+            <img class="psychology" src="../static/images/eminentseo_color-psychology_Post_Featured.jpg" alt="psychology">
+        </div>
+    </div>
+</header>
+<nav>
+    <ul class="caveat-uniquifier">
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="colors.html">Цветове</a></li>
+        <li><a href="combinations.html">Комбинации</a></li>
+        <li><a href="industries.html">Индустрии</a></li>
+        <li><a href="best-practices.html">Практики</a></li>
+        <li><a href="contact.html">Контакт</a></li>
+    </ul>
+</nav>
+<div class="mobile-menu">
+    <button class="menu-toggle">☰</button>
+    <ul class="mobile-nav">
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="colors.html">Цветове</a></li>
+        <li><a href="combinations.html">Комбинации</a></li>
+        <li><a href="industries.html">Индустрии</a></li>
+        <li><a href="best-practices.html">Практики</a></li>
+        <li><a href="contact.html">Контакт</a></li>
+    </ul>
+</div>
+<main>
+    <div class="center">
+        <input type="text" id="colorInput" placeholder="Въведи цвет (например червен)">
+        <button onclick="searchColor()">Провери</button>
+        <p id="result"></p>
+    </div>
+</main>
+<footer class="footer center">
+    <p>&copy; 2025 Психология на цветовете</p>
+</footer>
+<script src="../static/JavaScript/jsMenuMobile.js" type="text/javascript"></script>
+<script src="../static/JavaScript/jsSearchColor.js" type="text/javascript"></script>
+</body>
+</html>

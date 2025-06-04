@@ -15,44 +15,57 @@
     <body class="Lobster">
         <header>
             <div class="header row">
-                <div class="col-1"> 
-                    <a href="index.html">                        
+                <div class="col-1">
+                    <a href="index.html">
                         <img class="logo" src="../static/images/logo.jpg" alt="logo"/></a>
                 </div>
                 <div class="col-8">
                     <h1 class="content">Цветове и тяхното значение</h1>
                 </div>
                 <div class="col-3 socials">
-                    <a href=" https://www.facebook.com/" target="_blank" title="Посетете ни в facebook">  
+                    <a href=" https://www.facebook.com/" target="_blank" title="Посетете ни в facebook">
                         <img class="f" src="../static/images/facebook.png" alt=""/></a>
                     <a href=" https://x.com/?lang=en&mx=2" target="_blank" title="Посетете ни в x">
                         <img class="x" src="../static/images/X_logo.JPG" alt=""/></a>
                     <a href=" https://www.instagram.com/" target="_blank" title="Посетете ни в instagram">
                         <img class="inst" src="../static/images/instagram.png" alt=""/></a>
                 </div>
-             
+
         </header>
         <nav>
-            <ul class="caveat-uniquifier">
+            <ul class="nav">
                 <li><a href="index.html">Начало</a></li>
-                <li><a href="colors.html">Цветове</a></li>
+                <li>
+                    <a href="colors.html">Цветове</a>
+                    <ul class="dropdown">
+                        <li><a href="color-search.html">Проверка на цвят</a></li>
+                    </ul>
+                </li>
                 <li><a href="combinations.html">Комбинации</a></li>
                 <li><a href="industries.html">Индустрии</a></li>
                 <li><a href="best-practices.html">Практики</a></li>
                 <li><a href="contact.html">Контакт</a></li>
             </ul>
         </nav>
-<div class="mobile-menu">
-    <button class="menu-toggle">☰</button>
-    <ul class="mobile-nav">
-        <li><a href="index.html">Начало</a></li>
-        <li><a href="colors.html">Цветове</a></li>
-        <li><a href="combinations.html">Комбинации</a></li>
-        <li><a href="industries.html">Индустрии</a></li>
-        <li><a href="best-practices.html">Практики</a></li>
-        <li><a href="contact.html">Контакт</a></li>
-    </ul>
-</div>
+        <div class="mobile-menu">
+            <button class="menu-toggle">☰</button>
+            <ul class="mobile-nav">
+                <li><a href="index.html">Начало</a></li>
+                <li class="has-dropdown">
+                    <div class="dropdown-header">
+                        <a href="colors.html">Цветове</a>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <ul class="dropdown">
+                        <li><a href="color-search.html">Проверка на цвят</a></li>
+                    </ul>
+                </li>
+                <li><a href="combinations.html">Комбинации</a></li>
+                <li><a href="industries.html">Индустрии</a></li>
+                <li><a href="best-practices.html">Практики</a></li>
+                <li><a href="contact.html">Контакт</a></li>
+            </ul>
+        </div>
         <main>
             <div class="slider">
                     <div class="slide">

@@ -13,7 +13,9 @@ public class ColorService {
         return Arrays.asList(
                 new Color("Червен", "Енергия, страст"),
                 new Color("Син", "Спокойствие, доверие"),
-                new Color("Жълт", "Щастие, позитивност")
+                new Color("Жълт", "Щастие, позитивност"),
+                new Color("Зелен", "Природа, баланс")
+
         );
     }
 

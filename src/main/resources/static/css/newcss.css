@@ -147,7 +147,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
+    position: relative; /* важно за dropdown позиционирането */
     margin: 0 15px;
 }
 
@@ -162,6 +163,36 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #FFD700; /* Променя цвета при задържане */
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* по-мека сянка */
+    min-width: 160px;
+    border-radius: 10px; /* 👉 Закръглени ъгли */
+    z-index: 1001;
+}
+
+.dropdown li {
+    padding: 5px 20px;
+}
+
+.dropdown li a {
+    color: white; /* за да е видим текстът върху тъмен фон */
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
 }
 
 main {
@@ -560,7 +591,51 @@ html,body {
     display: flex;
 }
 
+.mobile-nav .dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 0;
+    overflow: hidden;
+}
 
+.mobile-nav .dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.mobile-nav .dropdown li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.mobile-nav .dropdown.active {
+    display: flex;
+}
+.has-dropdown {
+    position: relative; /* ако решиш по-късно да го плаваш */
+}
+.has-dropdown > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.toggle-icon {
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+}
 
 @media only screen and (max-width: 480px) {
     body {

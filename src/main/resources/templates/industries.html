@@ -38,26 +38,39 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
     </header>
 
     <nav>
-        <ul class="caveat-uniquifier">
+        <ul class="nav">
             <li><a href="index.html">Начало</a></li>
-            <li><a href="colors.html">Цветове</a></li>
+            <li>
+                <a href="colors.html">Цветове</a>
+                <ul class="dropdown">
+                    <li><a href="color-search.html">Проверка на цвят</a></li>
+                </ul>
+            </li>
             <li><a href="combinations.html">Комбинации</a></li>
             <li><a href="industries.html">Индустрии</a></li>
             <li><a href="best-practices.html">Практики</a></li>
             <li><a href="contact.html">Контакт</a></li>
         </ul>
     </nav>
-<div class="mobile-menu">
-    <button class="menu-toggle">☰</button>
-    <ul class="mobile-nav">
-        <li><a href="index.html">Начало</a></li>
-        <li><a href="colors.html">Цветове</a></li>
-        <li><a href="combinations.html">Комбинации</a></li>
-        <li><a href="industries.html">Индустрии</a></li>
-        <li><a href="best-practices.html">Практики</a></li>
-        <li><a href="contact.html">Контакт</a></li>
-    </ul>
-</div>
+    <div class="mobile-menu">
+        <button class="menu-toggle">☰</button>
+        <ul class="mobile-nav">
+            <li><a href="index.html">Начало</a></li>
+            <li class="has-dropdown">
+                <div class="dropdown-header">
+                    <a href="colors.html">Цветове</a>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <ul class="dropdown">
+                    <li><a href="color-search.html">Проверка на цвят</a></li>
+                </ul>
+            </li>
+            <li><a href="combinations.html">Комбинации</a></li>
+            <li><a href="industries.html">Индустрии</a></li>
+            <li><a href="best-practices.html">Практики</a></li>
+            <li><a href="contact.html">Контакт</a></li>
+        </ul>
+    </div>
     <main>
         <h2>Как цветовете влияят на различните индустрии?</h2>
         <p>Цветовете играят ключова роля в маркетинга, дизайна и потребителското преживяване. Те предизвикват емоции и влияят върху решението на потребителите. Следните насоки ще ти помогнат да използваш цветовете ефективно.</p>

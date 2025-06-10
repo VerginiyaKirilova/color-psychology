@@ -35,36 +35,37 @@
 </header>
 <nav>
     <ul class="nav">
-        <li><a href="index.html">Начало</a></li>
+        <li><a th:href="@{/}">Начало</a></li>
         <li>
-            <a href="colors.html">Цветове</a>
+            <a th:href="@{/colors}">Цветове</a>
             <ul class="dropdown">
-                <li><a href="color-search.html">Проверка на цвят</a></li>
+                <li><a th:href="@{/color-search}">Проверка на цвят</a></li>
             </ul>
         </li>
-        <li><a href="combinations.html">Комбинации</a></li>
-        <li><a href="industries.html">Индустрии</a></li>
-        <li><a href="best-practices.html">Практики</a></li>
-        <li><a href="contact.html">Контакт</a></li>
+        <li><a th:href="@{/combinations}">Комбинации</a></li>
+        <li><a th:href="@{/industries}">Индустрии</a></li>
+        <li><a th:href="@{/best-practices}">Практики</a></li>
+        <li><a th:href="@{/contact}">Контакт</a></li>
     </ul>
 </nav>
+
 <div class="mobile-menu">
     <button class="menu-toggle">☰</button>
     <ul class="mobile-nav">
-        <li><a href="index.html">Начало</a></li>
+        <li><a th:href="@{/}">Начало</a></li>
         <li class="has-dropdown">
             <div class="dropdown-header">
-                <a href="colors.html">Цветове</a>
+                <a th:href="@{/colors}">Цветове</a>
                 <span class="toggle-icon">+</span>
             </div>
             <ul class="dropdown">
-                <li><a href="color-search.html">Проверка на цвят</a></li>
+                <li><a th:href="@{/color-search}">Проверка на цвят</a></li>
             </ul>
         </li>
-        <li><a href="combinations.html">Комбинации</a></li>
-        <li><a href="industries.html">Индустрии</a></li>
-        <li><a href="best-practices.html">Практики</a></li>
-        <li><a href="contact.html">Контакт</a></li>
+        <li><a th:href="@{/combinations}">Комбинации</a></li>
+        <li><a th:href="@{/industries}">Индустрии</a></li>
+        <li><a th:href="@{/best-practices}">Практики</a></li>
+        <li><a th:href="@{/contact}">Контакт</a></li>
     </ul>
 </div>
 <main>
@@ -73,15 +74,15 @@
         <button onclick="searchColor()">Провери</button>
         <p id="result"></p>
     </div>
-   <!-- <form method="post" th:action="@{/color-search}">
-        <label for="color">Въведи цвят:</label>
-        <input type="text" id="color" name="color" th:value="${color}" placeholder="например: червен">
-        <button type="submit">Провери</button>
-    </form>
+    <!-- <form method="post" th:action="@{/color-search}">
+         <label for="color">Въведи цвят:</label>
+         <input type="text" id="color" name="color" th:value="${color}" placeholder="например: червен">
+         <button type="submit">Провери</button>
+     </form>
 
-    <div th:if="${meaning}">
-        <p>Значение: <span th:text="${meaning}"></span></p>
-    </div>-->
+     <div th:if="${meaning}">
+         <p>Значение: <span th:text="${meaning}"></span></p>
+     </div>-->
 </main>
 <footer class="footer center">
     <p>&copy; 2025 Психология на цветовете</p>

@@ -1,12 +1,10 @@
-package com.colors.controller;
+package com.colors.controller.controllerApi;
 
+import com.colors.entity.ColorEntity;
 import com.colors.model.Color;
 import com.colors.service.ColorService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,14 +18,19 @@ public class ColorController {
         this.colorService = colorService;
     }
     @GetMapping
-    public List<Color> getColors(){
+    public List<ColorEntity> getColors(){
         return colorService.getAllColors();
     }
 
     @GetMapping("/search")
-    public ResponseEntity<Color> searchColor(@RequestParam String name){
+    public ResponseEntity<ColorEntity> searchColor(@RequestParam String name){
         return colorService.findByName(name)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PostMapping
+    public ColorEntity addColor(@RequestParam ColorEntity color){
+        return colorService.save(color);
     }
 }

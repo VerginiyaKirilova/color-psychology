@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="bg" xmlns:th="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8">
         <title>Контакти</title>
@@ -35,39 +35,41 @@
         </header>
         <nav>
             <ul class="nav">
-                <li><a href="index.html">Начало</a></li>
+                <li><a th:href="@{/}">Начало</a></li>
                 <li>
-                    <a href="colors.html">Цветове</a>
+                    <a th:href="@{/colors}">Цветове</a>
                     <ul class="dropdown">
-                        <li><a href="color-search.html">Проверка на цвят</a></li>
+                        <li><a th:href="@{/color-search}">Проверка на цвят</a></li>
                     </ul>
                 </li>
-                <li><a href="combinations.html">Комбинации</a></li>
-                <li><a href="industries.html">Индустрии</a></li>
-                <li><a href="best-practices.html">Практики</a></li>
-                <li><a href="contact.html">Контакт</a></li>
+                <li><a th:href="@{/combinations}">Комбинации</a></li>
+                <li><a th:href="@{/industries}">Индустрии</a></li>
+                <li><a th:href="@{/best-practices}">Практики</a></li>
+                <li><a th:href="@{/contact}">Контакт</a></li>
             </ul>
         </nav>
+
         <div class="mobile-menu">
             <button class="menu-toggle">☰</button>
             <ul class="mobile-nav">
-                <li><a href="index.html">Начало</a></li>
+                <li><a th:href="@{/}">Начало</a></li>
                 <li class="has-dropdown">
                     <div class="dropdown-header">
-                        <a href="colors.html">Цветове</a>
+                        <a th:href="@{/colors}">Цветове</a>
                         <span class="toggle-icon">+</span>
                     </div>
                     <ul class="dropdown">
-                        <li><a href="color-search.html">Проверка на цвят</a></li>
+                        <li><a th:href="@{/color-search}">Проверка на цвят</a></li>
                     </ul>
                 </li>
-                <li><a href="combinations.html">Комбинации</a></li>
-                <li><a href="industries.html">Индустрии</a></li>
-                <li><a href="best-practices.html">Практики</a></li>
-                <li><a href="contact.html">Контакт</a></li>
+                <li><a th:href="@{/combinations}">Комбинации</a></li>
+                <li><a th:href="@{/industries}">Индустрии</a></li>
+                <li><a th:href="@{/best-practices}">Практики</a></li>
+                <li><a th:href="@{/contact}">Контакт</a></li>
             </ul>
         </div>
-    <h2>Свържете се с нас</h2>
+
+        <h2>Свържете се с нас</h2>
 
     <form id="contactForm">
         <p><div class="container">

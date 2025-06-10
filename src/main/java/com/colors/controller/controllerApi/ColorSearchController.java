@@ -1,4 +1,4 @@
-package com.colors.controller;
+package com.colors.controller.controllerApi;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

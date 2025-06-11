@@ -1,11 +1,9 @@
 package com.colors.service;
 
 import com.colors.entity.ColorEntity;
-import com.colors.model.Color;
 import com.colors.repository.ColorRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 

@@ -26,7 +26,7 @@ public class ColorController {
         return "colors"; // името на HTML темплейта (colors.html)
     }
 
-    @GetMapping("/search")
+ /*   @GetMapping("/search")
     public String searchColor(@RequestParam String name, Model model) {
         Optional<ColorEntity> color = colorService.findByName(name);
         if (color.isPresent()) {
@@ -36,7 +36,20 @@ public class ColorController {
             model.addAttribute("error", "Цветът не е намерен.");
             return "color-not-found";
         }
-    }
+    }*/
+ // Показване на формата за търсене + обработка
+ @GetMapping("/color-search")
+ public String showSearchPage(@RequestParam(required = false) String name, Model model) {
+     if (name != null && !name.isBlank()) {
+         Optional<ColorEntity> color = colorService.findByName(name);
+         if (color.isPresent()) {
+             model.addAttribute("color", color.get());
+         } else {
+             model.addAttribute("error", "Цветът не е намерен.");
+         }
+     }
+     return "color-search"; // шаблон: color-search.html
+ }
 
     @GetMapping("/add")
     public String showAddForm(Model model) {

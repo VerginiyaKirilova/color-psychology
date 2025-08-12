@@ -3,8 +3,11 @@ README.md for GitHub – Psychology of Colors Website
 # Psychology of Colors – Website
 
 ## Project Description
-This website explores the significance of colors and their psychological impact in marketing, design, and various industries. 
+This website explores the significance of colors and their psychological impact in marketing, design, and 
+various industries. 
 It includes dynamic content, tables, an interactive slider, and a fully responsive design.
+Originally developed as a static HTML/CSS website, the project was later migrated to a dynamic Spring 
+Boot application using Maven, enabling backend integration and advanced features.
 
 ---
 
@@ -14,6 +17,7 @@ The project is built with:
 - **CSS3** – Styling and layout
 - **JavaScript** – Dynamic content
 - **Responsive Design** – Optimized for mobile devices
+- **Spring Boot (Maven)** – Backend framework used after migration for dynamic content and service integration
 
 ---
 

@@ -82,6 +82,17 @@ The project is built with:
 
 ---
 
+## Backend Microservices
+
+This project includes a dedicated backend microservice for logging user search actions, built with 
+Spring Boot and Maven. The Logging Service tracks every color search request, stores logs in a MySQL 
+database (hosted on AWS RDS), and provides a REST API for analytics and monitoring.
+
+**Tech stack:** Java 17, Spring Boot, MySQL, Docker, AWS EC2 & RDS
+
+- Repository: [Logging Service GitHub](https://github.com/VerginiyaKirilova/logging-service)
+- README with installation and usage: [Logging Service README](https://github.com/VerginiyaKirilova/logging-service/blob/mine/README.md)
+
 ## How to Use the Code?
 
 1. **Clone the repository**
